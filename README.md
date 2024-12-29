@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
@@ -73,3 +74,6 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+=======
+# my-portfolio
+>>>>>>> ce00830d0b68d07153ec977f618b5af4d96824d4
