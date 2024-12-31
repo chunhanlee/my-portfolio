@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="font-sans text-gray-900 dark:text-white">
+  <div class="font-sans text-gray-900 dark:text-white">
     <HeroSection />
     <AboutSection />
     <SkillsSection />
@@ -9,6 +9,13 @@
     <BackToTop />
   </div>
 </template>
+
 <script setup>
-import BackToTop from '~/components/BackToTop.vue';
+import HeroSection from '../components/HeroSection.vue'
+import AboutSection from '../components/AboutSection.vue'
+import SkillsSection from '../components/SkillsSection.vue'
+import EducationSection from '../components/EducationSection.vue'
+import ProjectsSection from '../components/ProjectsSection.vue'
+import ContactSection from '../components/ContactSection.vue'
+import BackToTop from '../components/BackToTop.vue'
 </script>

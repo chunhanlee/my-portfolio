@@ -7,81 +7,49 @@
           name="contact"
           method="POST"
           data-netlify="true"
-          @submit.prevent="submitForm"
           class="space-y-4"
         >
-          <!-- Required hidden input for Netlify -->
           <input type="hidden" name="form-name" value="contact" />
           
-          <input
-            v-model="name"
-            name="name"
-            placeholder="Your Name"
-            class="w-full p-3 border rounded bg-white dark:bg-gray-700 dark:text-white dark:border-gray-600"
-            required
-          />
-          <input
-            v-model="email"
-            name="email"
-            placeholder="Your Email"
-            type="email"
-            class="w-full p-3 border rounded bg-white dark:bg-gray-700 dark:text-white dark:border-gray-600"
-            required
-          />
-          <textarea
-            v-model="message"
-            name="message"
-            placeholder="Your Message"
-            rows="4"
-            class="w-full p-3 border rounded bg-white dark:bg-gray-700 dark:text-white dark:border-gray-600"
-            required
-          ></textarea>
+          <div class="mb-4">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              class="w-full p-3 border rounded bg-white dark:bg-gray-700 dark:text-white dark:border-gray-600"
+              required
+            />
+          </div>
+
+          <div class="mb-4">
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              class="w-full p-3 border rounded bg-white dark:bg-gray-700 dark:text-white dark:border-gray-600"
+              required
+            />
+          </div>
+
+          <div class="mb-4">
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="4"
+              class="w-full p-3 border rounded bg-white dark:bg-gray-700 dark:text-white dark:border-gray-600"
+              required
+            ></textarea>
+          </div>
+
           <button 
             type="submit" 
-            class="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700 disabled:bg-blue-300"
-            :disabled="loading"
+            class="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition-colors duration-300"
           >
-            {{ loading ? 'Sending...' : 'Send' }}
+            Send Message
           </button>
         </form>
       </div>
     </div>
   </section>
 </template>
-
-<script setup>
-import { ref } from 'vue';
-
-const name = ref('');
-const email = ref('');
-const message = ref('');
-const loading = ref(false);
-
-function submitForm(e) {
-  loading.value = true;
-  
-  // Get the form data
-  const formData = new FormData(e.target);
-  
-  // Submit to Netlify
-  fetch('/', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => {
-      // Clear form
-      name.value = '';
-      email.value = '';
-      message.value = '';
-      alert('Thank you for your message!');
-    })
-    .catch((error) => {
-      alert('Oops! There was a problem submitting your form');
-    })
-    .finally(() => {
-      loading.value = false;
-    });
-}
-</script>
   

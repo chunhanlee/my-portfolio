@@ -16,9 +16,9 @@
 <script setup>
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Description for project 1',
-    image: '/images/uofa.jpg',
+    title: 'My Portfolio Website',
+    description: 'Using Nuxt to create a static portfolio website',
+    image: '/images/portfolio.jpg',
     githubUrl: '#'
   },
   {
