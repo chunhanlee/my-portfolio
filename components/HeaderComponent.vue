@@ -84,13 +84,12 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue';
-import { joinURL } from 'ufo';
+import { ref } from 'vue';
+import { usePublicAsset } from '~/composables/usePublicAsset';
 import DarkModeToggle from './DarkModeToggle.vue';
 
 const isMenuOpen = ref(false);
-const runtimeConfig = useRuntimeConfig()
-const resumeUrl = computed(() => joinURL(runtimeConfig.app.baseURL ?? '/', 'resume.pdf'))
+const resumeUrl = usePublicAsset('resume.pdf')
 
 
 function toggleMenu() {

@@ -12,24 +12,28 @@
     </section>
   </template>
   
-  <script setup>
-  const skills = [
-    { name: 'Python', image: '~/public/images/python.svg' },
-    { name: 'Django', image: '~/public/images/django.svg' },
-    { name: 'Flask', image: '~/public/images/flask.svg' },
-    { name: 'React', image: '~/public/images/react.svg' },
-    { name: 'HTML5', image: '~/public/images/html5.svg' },
-    { name: 'CSS3', image: '~/public/images/css.svg' },
-    { name: 'JavaScript', image: '~/public/images/javascript.svg' },
-    { name: 'Vue.js', image: '~/public/images/vuejs.svg' },
-    { name: 'Blazor', image: '~/public/images/blazor.svg' },
-    { name: 'Bootstrap', image: '~/public/images/bootstrap.svg' },
-    { name: 'C#', image: '~/public/images/csharp.svg' },
-    { name: 'CSS', image: '~/public/images/css.svg' },
-    { name: 'SQL', image: '~/public/images/database.svg' },
-    { name: 'Git', image: '~/public/images/git.svg' },
-    { name: 'Docker', image: '~/public/images/docker.svg' }
+  <script setup lang="ts">
+import { usePublicAsset } from '~/composables/usePublicAsset'
 
-  ];
-  </script>
+const publicAsset = (file: string) => usePublicAsset(`images/${file}`)
+
+const skills = [
+  { name: 'Python', image: publicAsset('python.svg') },
+  { name: 'Django', image: publicAsset('django.svg') },
+  { name: 'Flask', image: publicAsset('flask.svg') },
+  { name: 'React', image: publicAsset('react.svg') },
+  { name: 'HTML5', image: publicAsset('html5.svg') },
+  { name: 'CSS3', image: publicAsset('css.svg') },
+  { name: 'JavaScript', image: publicAsset('javascript.svg') },
+  { name: 'Vue.js', image: publicAsset('vuejs.svg') },
+  { name: 'Blazor', image: publicAsset('blazor.svg') },
+  { name: 'Bootstrap', image: publicAsset('bootstrap.svg') },
+  { name: 'C#', image: publicAsset('csharp.svg') },
+  { name: 'CSS', image: publicAsset('css.svg') },
+  { name: 'SQL', image: publicAsset('database.svg') },
+  { name: 'Git', image: publicAsset('git.svg') },
+  { name: 'Docker', image: publicAsset('docker.svg') }
+]
+</script>
+
   

@@ -8,7 +8,7 @@
           class="flex items-center gap-6 bg-white shadow-md p-6 rounded max-w-4xl mx-auto transform transition-transform duration-300 hover:scale-105 dark:bg-gray-800"
         >
           <img
-            src="~/public/images/nait1.png"
+            :src="naitLogo"
             alt="NAIT Logo"
             class="w-48 h-48 object-contain rounded"
           />
@@ -22,7 +22,7 @@
           class="flex items-center gap-6 bg-white shadow-md p-6 rounded max-w-4xl mx-auto transform transition-transform duration-300 hover:scale-105 dark:bg-gray-800"
         >
           <img
-            src="~/public/images/uofa.png"
+            :src="uofaLogo"
             alt="UofA CCIS Building"
             class="w-48 h-48 object-cover rounded"
           />
@@ -37,3 +37,10 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import { usePublicAsset } from '~/composables/usePublicAsset'
+
+const naitLogo = usePublicAsset('images/nait1.png')
+const uofaLogo = usePublicAsset('images/uofa.png')
+</script>

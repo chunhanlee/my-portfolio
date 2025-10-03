@@ -35,7 +35,7 @@
       <!-- Right: image -->
       <div class="md:col-span-4">
         <div class="flex justify-center md:justify-end">
-          <img src="/images/hero-image.jpg" alt="John (Chun-Han) Lee"
+          <img :src="heroImageUrl" alt="John (Chun-Han) Lee"
             class="w-40 h-40 md:w-60 md:h-60 rounded-full" />
         </div>
       </div>
@@ -44,11 +44,11 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, onMounted, onBeforeUnmount } from 'vue'
-import { joinURL } from 'ufo'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { usePublicAsset } from '~/composables/usePublicAsset'
 
-const runtimeConfig = useRuntimeConfig()
-const resumeUrl = computed(() => joinURL(runtimeConfig.app.baseURL ?? '/', 'resume.pdf'))
+const resumeUrl = usePublicAsset('resume.pdf')
+const heroImageUrl = usePublicAsset('images/hero-image.jpg')
 
 const roles = ['Full-Stack Developer', 'AI Builder', 'Problem Solver']
 const typed = ref('')

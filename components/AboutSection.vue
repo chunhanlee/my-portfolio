@@ -45,9 +45,7 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import { joinURL } from 'ufo'
+import { usePublicAsset } from '~/composables/usePublicAsset'
 
-const runtimeConfig = useRuntimeConfig()
-const resumeUrl = computed(() => joinURL(runtimeConfig.app.baseURL ?? '/', 'resume.pdf'))
+const resumeUrl = usePublicAsset('resume.pdf')
 </script>

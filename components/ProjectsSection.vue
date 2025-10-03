@@ -14,11 +14,13 @@
 </template>
 
 <script setup>
+import { usePublicAsset } from '~/composables/usePublicAsset'
+
 const projects = [
   {
     title: 'My Portfolio Website',
     description: 'Using Nuxt to create a static portfolio website',
-    image: '~/public/images/portfolio.jpg',
+    image: usePublicAsset('images/portfolio.jpg'),
     githubUrl: 'https://github.com/chunhanlee/my-portfolio'
   }
 ];
