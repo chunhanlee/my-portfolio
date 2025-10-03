@@ -16,6 +16,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   plugins: [],
   nitro: {
-    preset: 'static',
+    preset: 'github_pages',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/resume'],
+    },
   },
 })
