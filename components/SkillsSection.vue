@@ -14,22 +14,22 @@
   
   <script setup>
   const skills = [
-    { name: 'Python', image: '/images/python.svg' },
-    { name: 'Django', image: '/images/django.svg' },
-    { name: 'Flask', image: '/images/flask.svg' },
-    { name: 'React', image: '/images/react.svg' },
-    { name: 'HTML5', image: '/images/html5.svg' },
-    { name: 'CSS3', image: '/images/css.svg' },
-    { name: 'JavaScript', image: '/images/javascript.svg' },
-    { name: 'Vue.js', image: '/images/vuejs.svg' },
-    { name: 'Blazor', image: '/images/blazor.svg' },
-    { name: 'Bootstrap', image: '/images/bootstrap.svg' },
-    { name: 'C#', image: '/images/csharp.svg' },
-    { name: 'CSS', image: '/images/css.svg' },
-    { name: 'SQL', image: '/images/database.svg' },
-    { name: 'Git', image: '/images/git.svg' },
-    { name: 'Docker', image: '/images/docker.svg' }
-    
+    { name: 'Python', image: '~/public/images/python.svg' },
+    { name: 'Django', image: '~/public/images/django.svg' },
+    { name: 'Flask', image: '~/public/images/flask.svg' },
+    { name: 'React', image: '~/public/images/react.svg' },
+    { name: 'HTML5', image: '~/public/images/html5.svg' },
+    { name: 'CSS3', image: '~/public/images/css.svg' },
+    { name: 'JavaScript', image: '~/public/images/javascript.svg' },
+    { name: 'Vue.js', image: '~/public/images/vuejs.svg' },
+    { name: 'Blazor', image: '~/public/images/blazor.svg' },
+    { name: 'Bootstrap', image: '~/public/images/bootstrap.svg' },
+    { name: 'C#', image: '~/public/images/csharp.svg' },
+    { name: 'CSS', image: '~/public/images/css.svg' },
+    { name: 'SQL', image: '~/public/images/database.svg' },
+    { name: 'Git', image: '~/public/images/git.svg' },
+    { name: 'Docker', image: '~/public/images/docker.svg' }
+
   ];
   </script>
   

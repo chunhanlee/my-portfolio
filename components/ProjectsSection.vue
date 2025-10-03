@@ -18,7 +18,7 @@ const projects = [
   {
     title: 'My Portfolio Website',
     description: 'Using Nuxt to create a static portfolio website',
-    image: '/images/portfolio.jpg',
+    image: '~/public/images/portfolio.jpg',
     githubUrl: 'https://github.com/chunhanlee/my-portfolio'
   }
 ];
