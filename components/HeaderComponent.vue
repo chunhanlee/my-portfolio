@@ -13,7 +13,7 @@
           <li><a href="mailto:lee.chunhan8@gmail.com" class="hover:text-blue-500 dark:text-white">Contact</a></li>
           <li>
             <a 
-              href="/resume.pdf" 
+              :href="resumeUrl" 
               target="_blank" 
               rel="noopener noreferrer" 
               class="hover:text-blue-500 dark:text-white flex items-center gap-1"
@@ -68,7 +68,7 @@
         <a href="#projects" class="hover:text-blue-500 dark:text-white transition-colors duration-300" @click="handleNavClick">Projects</a>
         <a href="mailto:lee.chunhan8@gmail.com" class="hover:text-blue-500 dark:text-white transition-colors duration-300">Contact</a>
         <a 
-          href="/resume.pdf"
+          :href="resumeUrl"
           target="_blank"
           rel="noopener noreferrer"
           class="hover:text-blue-500 dark:text-white transition-colors duration-300 flex items-center gap-1"
@@ -84,10 +84,14 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { computed, ref } from 'vue';
+import { joinURL } from 'ufo';
 import DarkModeToggle from './DarkModeToggle.vue';
 
 const isMenuOpen = ref(false);
+const runtimeConfig = useRuntimeConfig()
+const resumeUrl = computed(() => joinURL(runtimeConfig.app.baseURL ?? '/', 'resume.pdf'))
+
 
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value;

@@ -29,7 +29,7 @@
           </div>
 
           <div class="mt-8">
-            <a href="/resume.pdf" target="_blank" rel="noopener"
+            <a :href="resumeUrl" target="_blank" rel="noopener"
                class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition">
               View Résumé
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -43,3 +43,11 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import { computed } from 'vue'
+import { joinURL } from 'ufo'
+
+const runtimeConfig = useRuntimeConfig()
+const resumeUrl = computed(() => joinURL(runtimeConfig.app.baseURL ?? '/', 'resume.pdf'))
+</script>

@@ -25,7 +25,7 @@
             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition">
             About Me
           </a>
-          <a href="/resume.pdf" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-gray-300 dark:border-white/10
+          <a :href="resumeUrl" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-gray-300 dark:border-white/10
                     hover:bg-gray-50 dark:hover:bg-white/5 transition">
             Résumé
           </a>
@@ -44,7 +44,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { computed, ref, onMounted, onBeforeUnmount } from 'vue'
+import { joinURL } from 'ufo'
+
+const runtimeConfig = useRuntimeConfig()
+const resumeUrl = computed(() => joinURL(runtimeConfig.app.baseURL ?? '/', 'resume.pdf'))
 
 const roles = ['Full-Stack Developer', 'AI Builder', 'Problem Solver']
 const typed = ref('')
