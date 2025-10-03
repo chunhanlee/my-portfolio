@@ -5,7 +5,6 @@
     <SkillsSection />
     <EducationSection />
     <ProjectsSection />
-    <ContactSection />
     <BackToTop />
   </div>
 </template>
@@ -16,6 +15,5 @@ import AboutSection from '../components/AboutSection.vue'
 import SkillsSection from '../components/SkillsSection.vue'
 import EducationSection from '../components/EducationSection.vue'
 import ProjectsSection from '../components/ProjectsSection.vue'
-import ContactSection from '../components/ContactSection.vue'
 import BackToTop from '../components/BackToTop.vue'
 </script>
