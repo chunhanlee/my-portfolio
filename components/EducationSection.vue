@@ -8,13 +8,13 @@
           class="flex items-center gap-6 bg-white shadow-md p-6 rounded max-w-4xl mx-auto transform transition-transform duration-300 hover:scale-105 dark:bg-gray-800"
         >
           <img
-            src="~/public/images/nait.jpg"
-            alt="NAIT Feltham Centre"
-            class="w-48 h-48 object-cover rounded"
+            src="~/public/images/nait1.png"
+            alt="NAIT Logo"
+            class="w-48 h-48 object-contain rounded"
           />
           <div class="text-left">
             <h3 class="text-2xl font-semibold">Diploma<br />Digital Media and IT</h3>
-            <p class="text-gray-600">NAIT (2023-2025)</p>
+            <p class="text-gray-600 italic">NAIT (2023-2025)</p>
           </div>
         </div>
         <!-- Second Card -->
@@ -22,7 +22,7 @@
           class="flex items-center gap-6 bg-white shadow-md p-6 rounded max-w-4xl mx-auto transform transition-transform duration-300 hover:scale-105 dark:bg-gray-800"
         >
           <img
-            src="~/public/images/uofa.jpg"
+            src="~/public/images/uofa.png"
             alt="UofA CCIS Building"
             class="w-48 h-48 object-cover rounded"
           />
@@ -30,7 +30,7 @@
             <h3 class="text-2xl font-semibold">
               Bachelor of Science <br />Computer Science<br />Business Minor
             </h3>
-            <p class="text-gray-600">University of Alberta (2010-2015)</p>
+            <p class="text-gray-600 italic">University of Alberta (2010-2015)</p>
           </div>
         </div>
       </div>

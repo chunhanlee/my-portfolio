@@ -9,7 +9,8 @@
           <li><a href="#about" class="hover:text-blue-500 dark:text-white" @click="handleNavClick">About</a></li>
           <li><a href="#skills" class="hover:text-blue-500 dark:text-white" @click="handleNavClick">Skills</a></li>
           <li><a href="#education" class="hover:text-blue-500 dark:text-white" @click="handleNavClick">Education</a></li>
-          <li><a href="#contact" class="hover:text-blue-500 dark:text-white" @click="handleNavClick">Contact</a></li>
+          <li><a href="#projects" class="hover:text-blue-500 dark:text-white" @click="handleNavClick">Projects</a></li>
+          <li><a href="mailto:lee.chunhan8@gmail.com" class="hover:text-blue-500 dark:text-white">Contact</a></li>
           <li>
             <a 
               href="/resume.pdf" 
@@ -64,7 +65,8 @@
         <a href="#about" class="hover:text-blue-500 dark:text-white transition-colors duration-300" @click="handleNavClick">About</a>
         <a href="#skills" class="hover:text-blue-500 dark:text-white transition-colors duration-300" @click="handleNavClick">Skills</a>
         <a href="#education" class="hover:text-blue-500 dark:text-white transition-colors duration-300" @click="handleNavClick">Education</a>
-        <a href="#contact" class="hover:text-blue-500 dark:text-white transition-colors duration-300" @click="handleNavClick">Contact</a>
+        <a href="#projects" class="hover:text-blue-500 dark:text-white transition-colors duration-300" @click="handleNavClick">Projects</a>
+        <a href="mailto:lee.chunhan8@gmail.com" class="hover:text-blue-500 dark:text-white transition-colors duration-300">Contact</a>
         <a 
           href="/resume.pdf"
           target="_blank"

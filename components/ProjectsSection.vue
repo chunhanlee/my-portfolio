@@ -20,12 +20,6 @@ const projects = [
     description: 'Using Nuxt to create a static portfolio website',
     image: '/images/portfolio.jpg',
     githubUrl: 'https://github.com/chunhanlee/my-portfolio'
-  },
-  {
-    title: 'Project 2',
-    description: 'Description for project 2',
-    image: '/images/nait.jpg',
-    githubUrl: '#'
   }
 ];
 </script> 
