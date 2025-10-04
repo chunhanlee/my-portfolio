@@ -1,76 +1,122 @@
-# Nuxt Minimal Starter
+# My Portfolio
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome! This repository contains the source code and assets for my personal portfolio website.
 
-## Setup
+## 🔗 Links
 
-Make sure to install dependencies:
+- Live site: https://chunhanlee.github.io/my-portfolio/  
+- Repository: https://github.com/chunhanlee/my-portfolio
+
+## 🧩 Overview
+
+This portfolio site is a static site built using Nuxt / Vue. It’s a showcase of my:
+
+- About me / personal introduction  
+- Skills & technologies I use  
+- Education & certifications  
+- Projects (with descriptions, tech stack, links)  
+- Contact 
+- Résumé information
+
+## 🛠️ Tech Stack & Tools
+
+Here are the main tools, libraries, and technologies used:
+
+- Framework / Platform: Nuxt.js / Vue  
+- Styling: Tailwind CSS  
+- Language: TypeScript / JavaScript  
+- Static Site Generation  
+- Hosting: GitHub Pages  
+
+## 📂 Project Structure
+
+Here’s a rough directory layout:
 
 ```bash
-# npm
+├── assets/
+├── components/
+├── composables/
+├── pages/
+├── public/
+├── .github/
+├── nuxt.config.ts
+├── package.json
+├── tailwind.config.js
+├── LICENSE
+└── README.md
+```
+- **assets/** — CSS, images, static assets  
+- **components/** — reusable Vue components  
+- **composables/** — composable / logic abstraction  
+- **pages/** — page views & route files  
+- **public/** — static files (favicon, etc.)  
+
+## 🧭 Setup & Local Development
+
+### Prerequisites
+
+- Node.js (v16+ recommended)  
+- npm / yarn / pnpm  
+
+### Installation
+
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
+# or
 yarn install
-
-# bun
-bun install
+# or
+pnpm install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
+### Run in development
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
+# or
 yarn dev
-
-# bun
-bun run dev
+# or
+pnpm dev
 ```
 
-## Production
+Visit http://localhost:3000 (or whichever port the dev server runs on).
 
-Build the application for production:
-
+### Build & Preview
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
+(or equivalent with yarn / pnpm)
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+🚀 Deployment
+This site is deployed to GitHub Pages. The build output is pushed to the appropriate branch (e.g. gh-pages or docs) as configured in the repo settings / build workflow.
 
+If using GitHub Actions, you can automate build + deploy whenever you push to main. (See .github/workflows/…)
+
+📁 Projects & Highlights
+Projects showcased in the site typically include:
+
+Project title & short summary
+
+Technologies used
+
+Links (GitHub repo, live demo)
+
+Screenshots or GIFs (if applicable)
+
+You can add new projects by updating your data source (e.g. a JSON file or in-code list) and the UI will reflect them.
+
+📬 Contributing
+This is my personal portfolio, so I’m not actively accepting contributions. But if you spot typos, layout issues, or want to suggest improvements, feel free to open an issue or PR.
+
+📄 License
+This project is licensed under the Apache 2.0 License. See the [LICENSE](./LICENSE) file for details.
+
+📫 Contact
+If you’d like to get in touch or view more of my work:
+
+Portfolio: https://chunhanlee.github.io/my-portfolio/
+
+GitHub: https://github.com/chunhanlee
+
+LinkedIn: https://www.linkedin.com/in/chun-han-lee
+
+Thank you for visiting my portfolio — I hope you find it insightful!
