@@ -27,7 +27,7 @@ const projects = [
     title: 'Personal Food Website',
     description: 'A personal project translating a book 中國傳統飲食宜忌全書 into a website. Currently in version 1.0. \nStack used: Python, SQLite, Flask, Hosted on Vercel',
     image: usePublicAsset('images/personal_food_website.png'),
-    githubUrl: 'https://local-food-website-4cs34879w-chun-hans-projects.vercel.app/'
+    githubUrl: 'https://local-food-website.vercel.app/'
   }
 ];
 </script> 
