@@ -4,8 +4,8 @@
     <img :src="project.image" :alt="project.title" class="project-image">
     <div class="project-content">
       <h3 class="project-title text-gray-900 dark:text-white">{{ project.title }}</h3>
-      <p class="project-description text-gray-600 dark:text-gray-300">{{ project.description }}</p>
-      <a :href="project.githubUrl" target="_blank" class="learn-more-btn">
+      <p class="project-description text-gray-600 dark:text-gray-300 whitespace-pre-line">{{ project.description }}</p>
+      <a :href="project.githubUrl" target="_blank" class="learn-more-btn w-auto self-start">
         Learn More
       </a>
     </div>
@@ -36,6 +36,9 @@ export default {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .project-card:hover {
@@ -50,6 +53,9 @@ export default {
 
 .project-content {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .project-title {
@@ -65,6 +71,7 @@ export default {
 }
 
 .learn-more-btn {
+  margin-top: auto;
   display: inline-block;
   padding: 0.5rem 1rem;
   background-color: #2563eb;
